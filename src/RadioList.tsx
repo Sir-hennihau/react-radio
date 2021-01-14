@@ -4,9 +4,7 @@ import { RadioItem } from "./RadioItem";
 import { RadioContext } from "./App";
 import Scrollbars from "react-custom-scrollbars";
 
-interface RadioListProps {}
-
-export const RadioList = ({}: RadioListProps) => {
+export const RadioList = () => {
   const { radios } = useContext(RadioContext);
 
   return (

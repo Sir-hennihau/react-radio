@@ -3,25 +3,18 @@ import styled from "styled-components";
 import { Color } from "./Utils";
 import { CSS_COLOR_FILTER } from "./Utils";
 
-interface NavbarProps {}
+export const Navbar = () => (
+  <StyledNavbarContainer>
+    <StyledIcon alt="back" src="https://img.icons8.com/android/344/back.png" />
 
-export const Navbar = ({}: NavbarProps) => {
-  return (
-    <StyledNavbarContainer>
-      <StyledIcon
-        alt="back"
-        src="https://img.icons8.com/android/344/back.png"
-      />
+    <StyledNavbarHeadline>STATIONS</StyledNavbarHeadline>
 
-      <StyledNavbarHeadline>STATIONS</StyledNavbarHeadline>
-
-      <StyledIcon
-        alt="power off"
-        src="https://img.icons8.com/ios/344/power-off-button--v1.png"
-      />
-    </StyledNavbarContainer>
-  );
-};
+    <StyledIcon
+      alt="power off"
+      src="https://img.icons8.com/ios/344/power-off-button--v1.png"
+    />
+  </StyledNavbarContainer>
+);
 
 const StyledNavbarContainer = styled.nav`
   width: 100%;
